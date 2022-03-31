@@ -1,11 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import Detail from '../components/Detail';
 import Layout from './Layout';
 
 const CoinDetail = () => {
+  const { symbol } = useParams();
   return (
     <Layout>
       <main>
-        <h1>Coin Detail</h1>
+        <Detail symbol={symbol} />
       </main>
     </Layout>
   );
