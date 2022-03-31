@@ -1,8 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NotFound from './components/common/NotFound';
+import CoinDetail from './containers/CoinDetail';
+import CoinListing from './containers/CoinListing';
+
 function App() {
   return (
-    <div className="grid min-h-screen justify-center items-center">
-      <h1 className="text-xl text-gray-700">Coin Stats</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<CoinListing />} />
+        <Route path="detail/:symbol" element={<CoinDetail />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
