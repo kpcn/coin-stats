@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NotFound from './components/common/NotFound';
+import NotFound from './components/Common/NotFound';
 import CoinDetail from './containers/CoinDetail';
 import CoinListing from './containers/CoinListing';
 

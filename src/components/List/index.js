@@ -3,8 +3,8 @@ import useSWR from 'swr';
 import Header from './Header';
 import { fetcher } from '../../utils';
 import LineItem from './LineItem';
-import ErrorMessage from '../common/ErrorMessage';
-import DataLoading from '../common/Loading';
+import ErrorMessage from '../Common/ErrorMessage';
+import DataLoading from '../Common/Loading';
 
 const List = () => {
   const { data: coins, error } = useSWR(
