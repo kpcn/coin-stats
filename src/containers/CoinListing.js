@@ -1,11 +1,12 @@
 import React from 'react';
+import List from '../components/List';
 import Layout from './Layout';
 
 const CoinListing = () => {
   return (
     <Layout>
       <main>
-        <h1>Coin Listing</h1>
+        <List />
       </main>
     </Layout>
   );
